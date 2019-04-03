@@ -3,7 +3,7 @@ services:
   kube:
     container_name: kube-all-in-one
     image: kube-all-in-one
-    build: ./build
+    build: ./
     volumes: 
       - "./work:/root"
     command: tail -f /dev/null

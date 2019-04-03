@@ -1,0 +1,9 @@
+version: '3'
+services: 
+  kube:
+    container_name: kube_test1
+    image: kube
+    build: ./build
+    volumes: 
+      - "./work:/root"
+    command: tail -f /dev/null

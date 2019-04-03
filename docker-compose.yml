@@ -1,8 +1,8 @@
 version: '3'
 services: 
   kube:
-    container_name: kube_test1
-    image: kube
+    container_name: kube-all-in-one
+    image: kube-all-in-one
     build: ./build
     volumes: 
       - "./work:/root"

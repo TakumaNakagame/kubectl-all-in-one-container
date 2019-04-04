@@ -43,8 +43,8 @@ cd kubectl-all-in-one
 docker-compose build
 ```
 
-```bash
 **Please execute only the following commands from the "command prompt".**
+```bash
 docker-compose up -d
 ```
 

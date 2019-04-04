@@ -1,10 +1,25 @@
 # kubectl-all-in-one-container
 Includes some packages such as kubectl
 
-## About
+## このイメージについて
+### About
 これは、複数のKubernetes環境を使い分けるために、`kubectl`などをコンテナにしたものです。
 
 これを利用することで、開発/ステージング/本番など複数の環境を簡単に使い分けることができます。
+
+### ベースイメージ
+- ubuntu:18.04
+
+### 含まれているパッケージ
+このイメージには次のパッケージが含まれています。バージョンが指定されていないものについては、ビルド時の最新がインストールされます。
+
+- kubectl
+- curl
+- zsh
+- git
+- vim
+- iputils-ping
+- dnsutils
 
 ## 使い方
 ### 要件

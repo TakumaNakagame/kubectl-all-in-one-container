@@ -23,16 +23,20 @@ docker-compoes exec kube [zsh | bash]
 ```
 
 #### Windows
-**次のコマンドは「コマンドプロンプト」から実行してください。**
 ```bash
 git clone https://github.com/TakumaNakagame/kubectl-all-in-one
 cd kubectl-all-in-one
+docker-compose build
+```
+
+```bash
+**次のコマンドだけは「コマンドプロンプト」から実行してください。**
 docker-compose up -d
 ```
 
 次のコマンドはコマンドプロンプトもしくはWSL、PowerShellなどの任意のシェルを利用可能です。
 ```bash
-docker-compoes exec kube [zsh | bash]
+docker-compose exec kube [zsh | bash]
 ```
 
 ##### ※コマンドプロンプトを利用する理由

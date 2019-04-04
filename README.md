@@ -1,17 +1,16 @@
 # kubectl-all-in-one-container
 Includes some packages such as kubectl
 
-## このイメージについて
-### About
-これは、複数のKubernetes環境を使い分けるために、`kubectl`などをコンテナにしたものです。
+## About
+This is a container with `kubectl` etc. in order to user multiple Kubernetes environments properly.
 
-これを利用することで、開発/ステージング/本番など複数の環境を簡単に使い分けることができます。
+By using this, you can easily use multiple environments such as deployment / staging / production.
 
-### ベースイメージ
+### Base Image
 - ubuntu:18.04
 
-### 含まれているパッケージ
-このイメージには次のパッケージが含まれています。バージョンが指定されていないものについては、ビルド時の最新がインストールされます。
+### Package included
+If the version is not specified, the latest build time will be installed.
 
 - kubectl
 - curl
@@ -21,14 +20,14 @@ Includes some packages such as kubectl
 - iputils-ping
 - dnsutils
 
-## 使い方
-### 要件
-次のコンポーネントをインストールしておいてください。
+## How to use
+### Requirements
+Install the following components:
 
 - docker
 - docker-compose
 
-### 基本の使い方
+### How to use basics
 #### Linux/Mac
 ```bash
 git clone https://github.com/TakumaNakagame/kubectl-all-in-one
@@ -45,18 +44,16 @@ docker-compose build
 ```
 
 ```bash
-**次のコマンドだけは「コマンドプロンプト」から実行してください。**
+**Please execute only the following commands from the "command prompt".**
 docker-compose up -d
 ```
 
-次のコマンドはコマンドプロンプトもしくはWSL、PowerShellなどの任意のシェルを利用可能です。
 ```bash
 docker-compose exec kube [zsh | bash]
 ```
 
-##### ※コマンドプロンプトを利用する理由
-WSLは非常に有用な機能ですが、WSLを経由してホストのディレクトリをDockerコンテナにマウントすることができません(`docker-compose up -d`のところ)。これは、コマンドプロンプトを利用することで回避できます。
+##### ※Reason for using command prompt
+WSL is a very useful feature, but you can not mount host directories on Docker containers via WSL(at `docker-compose up -d`). This can be avoided by using the command prompt.
 
-
-### ディレクトリ
-このリポジトリには、`work`ディレクトリが存在しています。これは、`/root/`にマウントされます。例えば、`work/hoge`としてディレクトリを作成した場合は、コンテナ上では`/root/hoge`としてマウントされます。
+### Working Directory
+The `work` directory exists in this repository. It is mounted on the container `/root/`. For example, if you create a directory as `work/foo`, it will be mounted as `/root/foo` on the container.

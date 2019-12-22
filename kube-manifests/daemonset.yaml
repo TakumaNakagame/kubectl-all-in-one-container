@@ -14,5 +14,5 @@ spec:
         app: ubuntu
     spec:
       containers:
-      - image: kameneko/kube-all-in-one:latest
+      - image: kameneko/kubectl-all-in-one:latest
         name: kube-all-in-one

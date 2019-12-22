@@ -16,3 +16,7 @@ spec:
       containers:
       - image: kameneko/kubectl-all-in-one:latest
         name: kube-all-in-one
+        command:
+        - tail
+        - -f
+        - /dev/null

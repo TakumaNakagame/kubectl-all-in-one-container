@@ -2,16 +2,16 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   labels:
-    app: ubuntu
-  name: ubuntu
+    app: kubectl-all-in-one
+  name: kubectl-all-in-one
 spec:
   selector:
     matchLabels:
-      app: ubuntu
+      app: kubectl-all-in-one
   template:
     metadata:
       labels:
-        app: ubuntu
+        app: kubectl-all-in-one
     spec:
       containers:
       - image: kameneko/kubectl-all-in-one:latest

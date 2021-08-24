@@ -7,5 +7,5 @@ RUN apt update && \
     curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl && \
     chmod +x ./kubectl && \
     mv ./kubectl /usr/local/bin/kubectl
-RUN apt install -y zsh git vim iputils-ping dnsutils && \
+RUN apt install -y git vim iputils-ping dnsutils && \
     rm -rf /var/lib/apt/lists/*

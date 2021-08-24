@@ -14,10 +14,10 @@ If the version is not specified, the latest build time will be installed.
 
 | command | version |
 | --- | --- |
-| kubectl | v1.18.4 |
+| kubectl | v1.22.1 |
 | curl | 7.58.0 |
 | git | 2.17.1 |
-| vim | 2:8.0 |
+| vim | 8.0.1453 |
 | iputils-ping | 20161105 |
 | dnsutils | 9.11.3 |
 

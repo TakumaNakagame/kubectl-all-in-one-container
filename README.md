@@ -12,15 +12,25 @@ By using this, you can easily use multiple environments such as deployment / sta
 ### Package included
 If the version is not specified, the latest build time will be installed.
 
-- kubectl
-- curl
-- zsh
-- git
-- vim
-- iputils-ping
-- dnsutils
+| command | version |
+| --- | --- |
+| kubectl | v1.18.4 |
+| curl | 7.58.0 |
+| git | 2.17.1 |
+| vim | 2:8.0 |
+| iputils-ping | 20161105 |
+| dnsutils | 9.11.3 |
 
 ## How to use
+
+### Quick using
+
+To start the container and execute it, run the following command.
+
+```
+$ docker run -it kameneko/kubectl-all-in-one:latest bash
+```
+
 ### Requirements
 Install the following components:
 
